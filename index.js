@@ -17,7 +17,7 @@ const direct = (merge, from, to) => {
 };
 
 /**
-    Perform a direct, character to character case mapping.
+    Exact character to character case mapping.
     
     @param from Word with target case.
     @param to Targeted word.
@@ -32,3 +32,20 @@ mc.direct = direct.bind(null, (c, upper, lower, to) => {
     return to;
 });
 
+/**
+    Character to character case mapping, but only make letters uppercase.
+    
+    @param from Word with target case.
+    @param to Targeted word.
+*/
+mc.upper = direct.bind(null, (c, upper, lower, to) =>
+    upper !== lower && c === upper ? to.toUpperCase() : to);
+
+/**
+    Character to character case mapping, but only make letters lowercase.
+    
+    @param from Word with target case.
+    @param to Targeted word.
+*/
+mc.lower = direct.bind(null, (c, upper, lower, to) =>
+    upper !== lower && c === lower ? to.toLowerCase() : to);
