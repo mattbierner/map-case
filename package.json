@@ -1,7 +1,7 @@
 {
     "name": "map-case",
     "version": "0.0.0",
-    "description": "Map casing of one word to another..",
+    "description": "Map casing of one word to another.",
     "author": "Matt Bierner",
     "license": "MIT",
     "repository": {

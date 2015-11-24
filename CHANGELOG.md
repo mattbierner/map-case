@@ -1,4 +1,4 @@
 # ChangeLog #
 
-## 0.0.0 - Nov XX, 2015
+## 0.0.0 - Nov 24, 2015
 * Initial Release
