@@ -21,5 +21,6 @@ describe('direct', () => {
     
      it('Should ignore non-letters in from string', () => {
         assert.strictEqual('bB', mapCase.direct('1A', 'bb'));
+        assert.strictEqual('bB', mapCase.direct('1A', 'Bb'));
     });
 });
